@@ -5,4 +5,4 @@ FROM build AS development
 EXPOSE 8080
 RUN apk update \
     && apk add git
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "serve"]
