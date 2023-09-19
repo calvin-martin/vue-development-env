@@ -1,4 +1,5 @@
 FROM node:20-alpine3.17 AS build
+WORKDIR VUEAPP
 COPY . .
 RUN npm ci
 FROM build AS development
